@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../installation-explained/">
+        <link rel="prev" href="../view-configuration/">
       
       
-        <link rel="next" href="../observability/">
+        <link rel="next" href="../cleanup/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>4. View Configuration in Dynatrace - Dynatrace Observability Lab: Automated Dynatrace Configuration as Code with Crossplane</title>
+        <title>1. Overview - Dynatrace Observability Lab: Automated Dynatrace Configuration as Code with Crossplane</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#see-tags-in-dynatrace" class="md-skip">
+        <a href="#crossplane-observability" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. View Configuration in Dynatrace
+              1. Overview
             
           </span>
         </div>
@@ -258,8 +258,6 @@
       
   
   
-    
-  
   
   
     
@@ -271,11 +269,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -289,7 +287,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Run the Tutorial
@@ -363,28 +361,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    4. View Configuration in Dynatrace
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../view-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,42 +373,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#see-tags-in-dynatrace" class="md-nav__link">
-    <span class="md-ellipsis">
-      See Tags in Dynatrace
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-a-change" class="md-nav__link">
-    <span class="md-ellipsis">
-      Make a Change
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -445,8 +389,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -456,11 +402,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -474,7 +420,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Crossplane Observability
@@ -485,10 +431,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../observability/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -497,6 +463,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-enable-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Enable Metrics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ensure-pods-are-annotated" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Ensure Pods are Annotated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-opentelemetry-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install OpenTelemetry Collector
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -636,6 +649,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -644,18 +659,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#see-tags-in-dynatrace" class="md-nav__link">
+  <a href="#1-enable-metrics" class="md-nav__link">
     <span class="md-ellipsis">
-      See Tags in Dynatrace
+      1. Enable Metrics
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#make-a-change" class="md-nav__link">
+  <a href="#2-ensure-pods-are-annotated" class="md-nav__link">
     <span class="md-ellipsis">
-      Make a Change
+      2. Ensure Pods are Annotated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-opentelemetry-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install OpenTelemetry Collector
     </span>
   </a>
   
@@ -679,44 +703,40 @@
   
 
 
-  <h1>4. View Configuration in Dynatrace</h1>
-
-<h2 id="see-tags-in-dynatrace">See Tags in Dynatrace<a class="headerlink" href="#see-tags-in-dynatrace" title="Permanent link">#</a></h2>
-<p><code>config_as_code/main.tf</code> contains a single auto-tag rule called <code>created-by-crossplane</code>.</p>
-<p>That auto tag should now exist in your Dynatrace environment.</p>
-<p>In Dynatrace:</p>
-<ul>
-<li>Press <code>ctrl + k</code>. Search for <code>settings</code></li>
-<li>Go to <code>Settings &gt; Tags &gt; Automatically applied tags</code></li>
-</ul>
-<p><img alt="auto tag rule" src="../images/dt-auto-tag-screen.png" /></p>
-<h2 id="make-a-change">Make a Change<a class="headerlink" href="#make-a-change" title="Permanent link">#</a></h2>
-<p>In the codespace:</p>
-<ul>
-<li>Open <code>config_as_code/main.tf</code></li>
-<li>Change the `description from:</li>
-</ul>
-<div class="highlight"><pre><span></span><code>description = &quot;this is an autotag rule created by crossplane&quot;
-</code></pre></div>
-<p>to</p>
-<div class="highlight"><pre><span></span><code>description = &quot;this is an autotag rule created by crossplane ABC123&quot;
-</code></pre></div>
-<ul>
-<li>Save that configuration back to your Git repository:</li>
-</ul>
-<div class="highlight"><pre><span></span><code>git add config_as_code/main.tf
-git commit -m &quot;update auto-tag rule&quot;
-git push
-</code></pre></div>
-<p>Wait 1 minute (recall that Crossplane is configured to sync once per minute).</p>
-<p>Refresh the Dynatrace UI.</p>
-<p>Open the auto-tag rule and you should see the changes reflected.</p>
-<p><img alt="auto tag changed" src="../images/dt-auto-tag-changed.png" /></p>
-<div class="grid cards">
-<ul>
-<li><a href="../observability/">Click Here to Continue <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span></a></li>
-</ul>
+<h1 id="crossplane-observability">Crossplane Observability<a class="headerlink" href="#crossplane-observability" title="Permanent link">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Under Construction</p>
+<p>This section is a work in progress.</p>
 </div>
+<p>Crossplane is running but it makes sense that we should be making sure that Crossplane is behaving correctly.</p>
+<p>Let's start by sending the metrics from crossplane into Dynatrace.</p>
+<h2 id="1-enable-metrics">1. Enable Metrics<a class="headerlink" href="#1-enable-metrics" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Enable Helm</p>
+<p>This has already been done during the initial setup of the demo environment.</p>
+<p>This section is for your information only. No action is required.</p>
+</div>
+<p><a href="https://docs.crossplane.io/latest/guides/metrics/" target="_blank">The Crossplane docs</a> mention that to enable metrics, the following property needs to be set via Helm. This is already done in the demo system.</p>
+<div class="highlight"><pre><span></span><code>metrics:
+  enabled: true
+</code></pre></div>
+<h2 id="2-ensure-pods-are-annotated">2. Ensure Pods are Annotated<a class="headerlink" href="#2-ensure-pods-are-annotated" title="Permanent link">#</a></h2>
+<p>By default, crossplane pods and most providers will have prometheus metrics and be annotated with the correct annotations to make them "scraping ready".</p>
+<p>You can check this with the following commands:</p>
+<div class="highlight"><pre><span></span><code>kubectl -n crossplane-system describe pod -l app.kubernetes.io/name=crossplane
+kubectl -n crossplane-system describe pod -l app.kubernetes.io/name=provider-crossplane
+</code></pre></div>
+<p>Each pod returned from those queries should include the relevant annotations:</p>
+<div class="highlight"><pre><span></span><code>Name:             crossplane-7fd45dd86d-gnk65
+Namespace:        crossplane-system
+...
+Annotations:      prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+</code></pre></div>
+<h2 id="install-opentelemetry-collector">Install OpenTelemetry Collector<a class="headerlink" href="#install-opentelemetry-collector" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 
 
 
