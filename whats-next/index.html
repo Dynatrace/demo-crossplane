@@ -32,8 +32,13 @@
 
     
     
+  <!-- Add scripts that need to run before here -->
+  
       
     
+  <!-- Add scripts that need to run afterwards here -->
+  <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/145e12d594f/bf64904yne/a783e0ae9649a2b5_complete.js" crossorigin="anonymous"></script>
+
     
       
         
@@ -594,6 +599,12 @@
   <h1>What's Next?</h1>
 
 <h2 id="todo">TODO<a class="headerlink" href="#todo" title="Permanent link">#</a></h2>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  dynatrace.sendBizEvent('page_load', {"page": "7. whats-next"});
+});
+</script>
+
 <ol>
 <li>This Observability Lab will be expanded to include a second tutorial on how to configure Observability for Crossplane.</li>
 </ol>

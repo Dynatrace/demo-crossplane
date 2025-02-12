@@ -34,8 +34,13 @@
 
     
     
+  <!-- Add scripts that need to run before here -->
+  
       
     
+  <!-- Add scripts that need to run afterwards here -->
+  <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/145e12d594f/bf64904yne/a783e0ae9649a2b5_complete.js" crossorigin="anonymous"></script>
+
     
       
         
@@ -614,6 +619,12 @@
   <h1>4. View Configuration in Dynatrace</h1>
 
 <h2 id="see-tags-in-dynatrace">See Tags in Dynatrace<a class="headerlink" href="#see-tags-in-dynatrace" title="Permanent link">#</a></h2>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  dynatrace.sendBizEvent('page_load', {"page": "4. view-configuration"});
+});
+</script>
+
 <p><code>config_as_code/main.tf</code> contains a single auto-tag rule called <code>created-by-crossplane</code>.</p>
 <p>That auto tag should now exist in your Dynatrace environment.</p>
 <p>In Dynatrace:</p>

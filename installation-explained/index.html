@@ -34,8 +34,13 @@
 
     
     
+  <!-- Add scripts that need to run before here -->
+  
       
     
+  <!-- Add scripts that need to run afterwards here -->
+  <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/145e12d594f/bf64904yne/a783e0ae9649a2b5_complete.js" crossorigin="anonymous"></script>
+
     
       
         
@@ -614,6 +619,12 @@
   <h1>3. Installation Explained</h1>
 
 <h2 id="wait-for-system">Wait for System<a class="headerlink" href="#wait-for-system" title="Permanent link">#</a></h2>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  dynatrace.sendBizEvent('page_load', {"page": "3. installation-explained"});
+});
+</script>
+
 <p>The system may still be loading.</p>
 <p>Wait until the <code>Running postCreate command</code> loading spinner disappears.</p>
 <p>Wait here until the terminal prompt looks like this (your username will differ).</p>

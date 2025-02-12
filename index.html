@@ -32,8 +32,13 @@
 
     
     
+  <!-- Add scripts that need to run before here -->
+  
       
     
+  <!-- Add scripts that need to run afterwards here -->
+  <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/145e12d594f/bf64904yne/a783e0ae9649a2b5_complete.js" crossorigin="anonymous"></script>
+
     
       
         
@@ -607,6 +612,12 @@
 <p class="admonition-title">View the Code</p>
 <p>The code for this repository is hosted on GitHub. Click the "View Code on GitHub" link above.</p>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  dynatrace.sendBizEvent('page_load', {"page": "1. homepage"});
+});
+</script>
+
 <p>In this hands-on demo, you will use <a href="https://crossplane.io" target="_blank">Crossplane</a> and <a href="https://docs.dynatrace.com/docs/manage/configuration-as-code/terraform" target="_blank">Terraform</a> configuration as code to keep Dynatrace in sync automatically.</p>
 <ol>
 <li>You fork <a href="https://github.com/dynatrace/demo-crossplane" target="_blank">this repository</a></li>
