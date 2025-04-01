@@ -614,7 +614,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>In the real-world, you would simply delete the file rather than comment it out.
 For demo purposes, we want you to still have the configuration for reference - hence we comment things out instead.</p>
 </div>
-<p>Crossplane will (after 1min) rescan your Git repo and notice the change (tag exists on Dynatrace but according to the repository, it shouldn't). Crossplane will then delete the tag from Dynatrace.</p>
+<p>Crossplane will (after 30 seconds) rescan your Git repo and notice the change (tag exists on Dynatrace but according to the repository, it shouldn't). Crossplane will then delete the tag from Dynatrace.</p>
 <div class="highlight"><pre><span></span><code># Surround existing content with /* ... */ to comment it out
 sed -i &#39;1i /*&#39; /workspaces/$RepositoryName/config_as_code/main.tf
 sed -i &#39;$a */&#39; /workspaces/$RepositoryName/config_as_code/main.tf
@@ -624,10 +624,10 @@ git commit -m &quot;comment out tag&quot;
 git push
 </code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Wait for 1min</p>
-<p>Remember to wait for 1 minute as that's how often Crossplane is configured to sync.</p>
+<p class="admonition-title">Wait for 30 seconds</p>
+<p>Remember to wait for 30 seconds as that's how often Crossplane is configured to sync.</p>
 </div>
-<p>After 1 minute, refresh the Classic Settings app, Automatically applied tags settings page:</p>
+<p>After 30 seconds, refresh the Classic Settings app, Automatically applied tags settings page:</p>
 <p>For example:
 <div class="highlight"><pre><span></span><code>https://abc12345.apps.dynatrace.com/ui/apps/dynatrace.classic.settings/ui/settings/builtin:tags.auto-tagging
 </code></pre></div></p>
