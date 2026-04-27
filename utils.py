@@ -767,3 +767,5 @@ def createNamespace(name):
 
 # At the end of it all, load in whatever is currently in .env
 load_dotenv()
+
+DT_URL = os.environ.get("DT_URL")
