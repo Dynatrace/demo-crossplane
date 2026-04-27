@@ -1,6 +1,6 @@
 resource "dynatrace_autotag_v2" "crossplane-created" {
   name                          = "crossplane-created"
-  description = "this is an autotag rule created by crossplane ABC123"
+  description = "this is an autotag rule created by crossplane"
   # rules_maintained_externally = false
   rules {
     rule {
