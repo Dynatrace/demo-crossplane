@@ -16,9 +16,6 @@ from utils import *
 createKubernetesCluster()
 createNamespace(name="crossplane-system")
 run_command(args=["kubectl", "-n", "crossplane-system", "create", "secret", "generic", "dt-details", f"--from-literal=DYNATRACE_ENV_URL={DT_URL}", f"--from-literal=DYNATRACE_API_TOKEN={DT_API_TOKEN}"])
-#createNamespace(name="unguard")
-
-#helm install crossplane --namespace crossplane-system --wait crossplane-stable/crossplane --values crossplane-values.yaml
 
 addHelmChart(name="crossplane-stable", url="https://charts.crossplane.io/stable", update=True)
 helmInstall(name="crossplane", url="crossplane-stable/crossplane", namespace="crossplane-system", values_file="crossplane-values.yaml")
@@ -38,30 +35,6 @@ do_file_replace(pattern=f"{BASE_DIR}/workspace-remote.yaml", find_string="GITHUB
 run_command(["kubectl", "apply", "-f", "terraform-provider-config.yaml"])
 # Create workspace (this tells crossplane to start monitoring this Git repo)
 run_command(["kubectl", "apply", "-f", f"{BASE_DIR}/workspace-remove.yaml"])
-
-
-#do_file_replace(pattern=f"{BASE_DIR}/dynatrace/dynakube.yaml", find_string="ENVIRONMENT_ID_PLACEHOLDER", replace_string=DT_ENVIRONMENT_ID)
-
-
-# kubectl -n dynatrace create secret generic unguard --from-literal=apiToken=$DT_API_TOKEN_OBSLAB_UNGUARD --from-literal=dataIngestToken=$DT_API_TOKEN_OBSLAB_UNGUARD
-#
-
-
-#helmInstall(name="dynatrace-operator", url="oci://public.ecr.aws/dynatrace/dynatrace-operator", namespace="dynatrace", values_file="values.yaml", atomic=True)
-
-
-#run_command(["kubectl", "-n", "dynatrace", "wait", "--for=condition=Ready", "--all", "--timeout", "300s", "pod"])
-
-
-
-
-#############################################################################
-# Install MariaDB (Unguard database)
-#run_command(["helm", "install", "unguard-mariadb", "bitnami/mariadb", "--version", "11.5.7", "--set", "primary.persistence.enabled=false", "--set", "image.repository=bitnamilegacy/mariadb", "--wait", "--namespace=unguard"])
-
-#############################################################################
-# Install Unguard
-#helmInstall(name="unguard", url="oci://ghcr.io/dynatrace-oss/unguard/chart/unguard", namespace="unguard")
 
 #################
 # Below is still a (re)-work in progress

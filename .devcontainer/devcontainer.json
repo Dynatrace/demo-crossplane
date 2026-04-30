@@ -24,7 +24,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install -r .devcontainer/requirements.txt && python ENVIRONMENT_installer.py",
+	"postCreateCommand": "pip install -r .devcontainer/requirements.txt && python environment_installer.py",
 	// When a user reconnects to this container, ensure the kubeconfig is meshed so kubectl works
 	"postAttachCommand": "python on_attach.py",
 
